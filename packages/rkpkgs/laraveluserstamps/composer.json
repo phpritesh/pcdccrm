@@ -1,0 +1,25 @@
+{
+    "name": "rkpkgs/laraveluserstamps",
+    "description": "simple Laravel package for Eloquent Model user specific feilds.",
+    "type": "library",
+    "require": {
+    "php": ">=7.0",
+    "illuminate/support": "~5.5",
+    "illuminate/database": "~5.5"
+    },
+    "license": "Mit",
+    "minimum-stability": "dev",
+  "autoload": {
+	"psr-4": {
+            "App\\": "app/",
+            "Rkpkgs\\Userstamps\\": "packages/rkpkgs/laraveluserstamps/src/"
+     }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Rkpkgs\\Userstamps\\UserstampsServiceProvider"
+      ]
+    }
+  }
+}
